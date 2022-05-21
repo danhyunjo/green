@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><!--네비게이션 바 ui-->
+
+    <item
+            android:id="@+id/vet_Diagnosis"
+            android:icon="@drawable/ic_qna"
+            android:title="답변하기" />
+    <item
+            android:id="@+id/vet_MyPage"
+            android:icon="@drawable/ic_account_circle"
+            android:title="마이페이지" />
+</menu>
