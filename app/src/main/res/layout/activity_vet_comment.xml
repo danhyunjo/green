@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"><![CDATA[
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/나이">
+
+
+
+
+
+
+
+
+
+
+
+        ]]>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:ems="10"
+                android:id="@+id/comment"
+                android:hint="아래의 식물의 생장환경과 CNN 모델 분석 결과를 참고하시어\n소견을 남겨주세요"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/darkgray"
+                android:textStyle="bold" android:textSize="14sp"
+                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
+                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:inputType="textMultiLine" android:scrollbars="vertical"
+                android:lines="5"
+                android:minLines="1"
+                android:maxLines="5" android:layout_margin="30dp"
+                android:backgroundTint="#FFF6F4F9"
+
+                android:elevation="20dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                    android:id="@+id/imageView3" android:layout_weight="1" android:layout_margin="20dp"/>
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" app:srcCompat="@drawable/image_preview"
+                    android:id="@+id/imageView" android:layout_gravity="center" android:layout_margin="20dp"
+            />
+        </LinearLayout>
+        <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="식물명(품종)" android:textSize="14sp" android:textStyle="bold"
+                tools:layout_editor_absoluteY="156dp" tools:layout_editor_absoluteX="210dp"
+                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:id="@+id/plants_name"
+                android:layout_margin="30dp" android:elevation="2dp" android:backgroundTint="#FFF6F4F9"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:id="@+id/water" tools:layout_editor_absoluteY="413dp"
+                tools:layout_editor_absoluteX="44dp" android:hint="물주기 간격" android:textColor="@color/darkgray"
+                android:textStyle="bold" android:textSize="14sp" android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" android:layout_marginRight="30dp" android:layout_marginEnd="30dp"
+                android:inputType="textMultiLine" android:scrollbars="vertical"
+                android:lines="5"
+                android:minLines="1"
+                android:maxLines="5"
+                android:elevation="20dp" android:backgroundTint="#FFF6F4F9"
+                android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:id="@+id/온도"
+                android:hint="온도" android:textColor="@color/darkgray"
+                android:textStyle="bold" android:textSize="14sp"
+                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
+                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:inputType="textMultiLine" android:scrollbars="vertical" android:backgroundTint="#FFF6F4F9"
+                android:lines="5"
+                android:minLines="1"
+                android:maxLines="5"
+                android:elevation="20dp" android:layout_marginBottom="10dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:id="@+id/기상요건"
+                android:hint="기상요건" android:textColor="@color/darkgray"
+                android:textStyle="bold" android:textSize="14sp"
+                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
+                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:inputType="textMultiLine" android:scrollbars="vertical" android:backgroundTint="#FFF6F4F9"
+                android:lines="5"
+                android:minLines="1"
+                android:maxLines="5"
+                android:elevation="20dp" android:layout_marginBottom="10dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:id="@+id/생육상태"
+                android:hint="생육상태" android:textColor="@color/darkgray"
+                android:textStyle="bold" android:textSize="14sp"
+                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
+                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:inputType="textMultiLine" android:scrollbars="vertical" android:backgroundTint="#FFF6F4F9"
+                android:lines="5"
+                android:minLines="1"
+                android:maxLines="5"
+                android:elevation="20dp" android:layout_marginBottom="10dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:id="@+id/생육상태2"
+                android:hint="사용하고 있던 방제방법" android:textColor="@color/darkgray"
+                android:textStyle="bold" android:textSize="14sp"
+                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
+                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"
+                android:inputType="textMultiLine" android:scrollbars="vertical" android:backgroundTint="#FFF6F4F9"
+                android:lines="5"
+                android:minLines="1"
+                android:maxLines="5"
+                android:elevation="20dp"/>
+        <Button
+                android:text="다음"
+                android:layout_width="80dp"
+                android:layout_height="40dp" android:id="@+id/next_step1" android:layout_gravity="center"
+                android:textStyle="bold" android:textColor="@color/white"
+                android:background="@drawable/nextbutton" app:backgroundTint="@color/main_blue"
+                android:layout_marginTop="20dp" android:layout_marginBottom="20dp"
+
+        />
+
+    </LinearLayout>
+</ScrollView>
