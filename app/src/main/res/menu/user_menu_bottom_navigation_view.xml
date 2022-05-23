@@ -14,12 +14,12 @@
             android:title="알림" />
     <item
             android:id="@+id/MyPage"
-            android:icon="@android:drawable/ic_menu_info_details"
+            android:icon="@drawable/ic_account_circle"
             android:title="마이페이지" />
     <item
             android:id="@+id/invisible"
             android:visible="false"
-            android:icon="@android:drawable/ic_menu_zoom"
+            android:icon="@drawable/ic_qna"
             android:title="account" />
 
 </menu>

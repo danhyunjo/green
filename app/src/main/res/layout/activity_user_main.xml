@@ -15,7 +15,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.033" android:textColor="#25379A" android:textSize="20sp"
+            app:layout_constraintVertical_bias="0.033" android:textColor="@color/main_blue" android:textSize="20sp"
             android:textStyle="bold" app:layout_constraintHorizontal_bias="0.727"/>
     <TextView
             android:text="김당근님, 환영합니다!"
@@ -24,12 +24,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.431"
-            android:textSize="20sp" android:textStyle="bold" android:textColor="#25379A"
+            android:textSize="20sp" android:textStyle="bold" android:textColor="@color/main_blue"
             app:layout_constraintHorizontal_bias="0.497"/>
     <ImageView
             android:id="@+id/mainmark"
             android:layout_width="150dp" android:layout_height="73dp"
-            android:src="@drawable/mainmark" app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/main_mark" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.731"
             app:layout_constraintHorizontal_bias="0.498"/>

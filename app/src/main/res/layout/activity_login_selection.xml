@@ -13,7 +13,7 @@
             android:fontFamily="sans-serif-black"
             android:text="사용자로 로그인하기"
             android:textSize="20sp"
-            app:backgroundTint="#25379A"
+            app:backgroundTint="@color/main_blue"
             app:iconTint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,16 +27,15 @@
             android:layout_height="58dp"
             android:fontFamily="sans-serif-black"
             android:text="수의사로 로그인하기"
-            android:textColor="#25379A"
+            android:textColor="@color/main_blue"
             android:textSize="20sp"
-            app:backgroundTint="#C7C9F0"
+            app:backgroundTint="@color/baby_green"
             app:iconTint="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.55" />
-
+            app:layout_constraintVertical_bias="0.546" app:layout_constraintHorizontal_bias="0.502"/>
     <Button
             android:id="@+id/vet_question"
             android:layout_width="wrap_content"

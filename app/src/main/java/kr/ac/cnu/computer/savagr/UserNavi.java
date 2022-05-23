@@ -29,6 +29,7 @@ public class UserNavi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_navigation);
+
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frameLayout, fragmentMain).commitAllowingStateLoss();
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
@@ -36,9 +37,7 @@ public class UserNavi extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(new ItemSelectedListener());
     }
 
-    public void fragmentChange() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, userFragmentDiagnosisStep2).commit();
-    }
+
 
     class ItemSelectedListener implements BottomNavigationView.OnItemSelectedListener {
         @Override

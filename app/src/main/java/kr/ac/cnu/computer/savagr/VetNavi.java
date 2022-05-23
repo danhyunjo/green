@@ -19,6 +19,7 @@ public class VetNavi extends AppCompatActivity {
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private VetFragmentQuestionList vet_fragmentDiagnosis = new VetFragmentQuestionList();
     private VetFragmentMyPage vet_fragmentMyPage = new VetFragmentMyPage();
+    private VetFragmentDiagnosisComment vet_frameDiagnosisComment = new VetFragmentDiagnosisComment();
     private long backKeyPressedTime = 0;
     private Toast toast;
 
@@ -49,7 +50,13 @@ public class VetNavi extends AppCompatActivity {
             return true;
         }
     }
-
+    public void fragmentChange(int index){
+        if(index == 1){
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, vet_fragmentDiagnosis).commit();
+        }else if(index == 2){
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, vet_frameDiagnosisComment).commit();
+        }
+    }
     public void onBackPressed() {
         if (System.currentTimeMillis() > backKeyPressedTime + 2500) {
             backKeyPressedTime = System.currentTimeMillis();

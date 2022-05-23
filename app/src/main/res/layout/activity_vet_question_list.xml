@@ -22,9 +22,9 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="32dp"
                     android:text="답변 대기 중인 질문"
-                    android:textColor="#1E2C7B"
+                    android:textColor="@color/main_blue"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
             <Button
                     android:id="@+id/vet_question"
@@ -35,9 +35,9 @@
                     android:layout_marginBottom="30dp"
                     android:gravity="left"
                     android:text="비숑 프리제 / 3세\n강아지 눈에 흰기가 도는데..."
-                    android:textColor="#1E2C7B"
+                    android:textColor="@color/main_blue"
                     android:textStyle="bold"
-                    app:backgroundTint="#F6F4F9" />
+                    app:backgroundTint="#F6F4F9"/>
 
         </LinearLayout>
     </ScrollView>

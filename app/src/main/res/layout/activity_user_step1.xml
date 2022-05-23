@@ -61,7 +61,7 @@
                     android:layout_marginStart="30dp"/>
         <EditText
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="100dp"
                 android:ems="10"
                 android:id="@+id/water" tools:layout_editor_absoluteY="413dp"
                 tools:layout_editor_absoluteX="44dp" android:hint="물주기 간격" android:textColor="@color/darkgray"
@@ -74,11 +74,11 @@
         />
         <EditText
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="100dp"
                 android:ems="10"
                 android:id="@+id/온도"
                 android:hint="온도" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="12sp"
+                android:textStyle="bold" android:textSize="14sp"
                 tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
                 android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
                 android:layout_marginEnd="30dp"
@@ -92,7 +92,7 @@
                 android:ems="10"
                 android:id="@+id/기상요건"
                 android:hint="기상요건" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="12sp"
+                android:textStyle="bold" android:textSize="14sp"
                 tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
                 android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
                 android:layout_marginEnd="30dp"
@@ -106,7 +106,7 @@
                 android:ems="10"
                 android:id="@+id/생육상태"
                 android:hint="생육상태" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="12sp"
+                android:textStyle="bold" android:textSize="14sp"
                 tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
                 android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
                 android:layout_marginEnd="30dp"
@@ -120,7 +120,7 @@
                 android:ems="10"
                 android:id="@+id/생육상태2"
                 android:hint="사용하고 있던 방제방법" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="12sp"
+                android:textStyle="bold" android:textSize="14sp"
                 tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
                 android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
                 android:layout_marginEnd="30dp"
@@ -137,6 +137,19 @@
                 android:layout_marginTop="20dp" android:layout_marginBottom="20dp"
 
                 />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars"
+                    android:id="@+id/imageButton" android:layout_weight="1"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/gallery_image"
+                    android:id="@+id/imageButton2" android:layout_weight="1"/>
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

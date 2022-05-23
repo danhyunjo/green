@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="마이페이지"
-            android:textColor="#25379A"
+            android:textColor="@color/main_blue"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -19,7 +19,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
 
-            app:layout_constraintVertical_bias="0.047" />
+            app:layout_constraintVertical_bias="0.047"/>
 
     <Button
             android:id="@+id/user_modify"
@@ -27,13 +27,13 @@
             android:layout_height="45dp"
             android:fontFamily="sans-serif-black"
             android:text="회원정보 수정"
-            app:backgroundTint="#DE8D14"
+            app:backgroundTint="@color/main_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.451"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
+            app:layout_constraintVertical_bias="0.198"/>
 
     <ImageView
             android:id="@+id/profile_image"
@@ -53,13 +53,13 @@
             android:layout_height="45dp"
             android:fontFamily="sans-serif-black"
             android:text="회원 탈퇴"
-            app:backgroundTint="#C7C9F0"
+            app:backgroundTint="@color/baby_green"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.913"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.198" />
+            app:layout_constraintVertical_bias="0.198"/>
 
     <TextView
             android:id="@+id/text_user_hello"
