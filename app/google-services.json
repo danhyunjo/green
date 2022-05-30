@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "466677532342",
+    "firebase_url": "https://savegr-50ccb-default-rtdb.firebaseio.com",
+    "project_id": "savegr-50ccb",
+    "storage_bucket": "savegr-50ccb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466677532342:android:9059c0f76c5c731f6ec817",
+        "android_client_info": {
+          "package_name": "kr.ac.cnu.computer.savagr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466677532342-luge48qf40dbkuljfoqif05netogr1b6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.ac.cnu.computer.savagr",
+            "certificate_hash": "f534a2848b3be4f449505b1df28a26f19761cda6"
+          }
+        },
+        {
+          "client_id": "466677532342-njc6bs73a8dgn4sqoakrba9lll4dfng6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFJb0JsyFJmDUjgceCPMjBC8HRUSJA9_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466677532342-njc6bs73a8dgn4sqoakrba9lll4dfng6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
