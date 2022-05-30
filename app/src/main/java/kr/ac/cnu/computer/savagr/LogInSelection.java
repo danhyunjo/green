@@ -32,7 +32,7 @@ public class LogInSelection extends AppCompatActivity {
 
         Button user_login_button = findViewById(R.id.login_by_user);
         Button vet_login_button = findViewById(R.id.login_by_vet);
-        Button button = findViewById(R.id.vet_question);
+        Button button = findViewById(R.id.question);
         EditText text = findViewById(R.id.editTextTextPersonName);
         TextView textView = findViewById(R.id.textView);
 

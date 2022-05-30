@@ -4,10 +4,12 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools">
+
     <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"><![CDATA[
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"><![CDATA[
 
     android:layout_width="match_parent"
     android:layout_height="match_parent" android:id="@+id/나이">
@@ -15,141 +17,441 @@
 
 
 
+
+
         ]]>
+
         <TextView
-                android:text="STEP 1 식물의 생장환경에 대해 알려주세요"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/STEP1"
-                android:textColor="@color/main_blue" android:textStyle="bold"
-                android:textSize="24sp" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintHorizontal_bias="0.494"
-                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.081"
-                android:gravity="center" android:layout_gravity="center" android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"/>
+            android:id="@+id/STEP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="STEP 1 식물의 생장환경에 대해\n알려주세요"
+            android:textColor="@color/main_blue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.081" />
 
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="horizontal">
-            <EditText
-                    android:layout_width="200dp"
-                    android:layout_height="40dp"
-                    android:inputType="textPersonName"
-                    android:ems="10"
-                    android:hint="식물명(품종)" android:textSize="14sp" android:textStyle="bold"
-                    tools:layout_editor_absoluteY="156dp" tools:layout_editor_absoluteX="210dp"
-                    android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:id="@+id/plants_name"/>
-        </LinearLayout>
-        <TextView
-                android:text="식물의 생장환경에 대해 알려주시면 \n식물의 질병을 판단하는 데 많은 도움이 됩니다.\n자세히 작성해주시는 것이 좋지만 잘 모르신다면\n모름으로 표기해주세요."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/성별"
-                android:textSize="14sp" android:textStyle="bold"
-                tools:layout_editor_absoluteY="220dp" tools:layout_editor_absoluteX="46dp"
-                android:layout_marginLeft="30dp" android:layout_marginStart="30dp"
-                android:layout_marginRight="30dp"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:layout_margin="30dp"/>
-
-
-
-        <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:orientation="horizontal" android:layout_marginLeft="30dp" android:layout_marginStart="30dp"/>
-
-        <RadioGroup android:layout_width="match_parent" android:layout_height="match_parent"
-                    android:orientation="horizontal" android:layout_marginLeft="30dp"
-                    android:layout_marginStart="30dp"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:ems="10"
-                android:id="@+id/water" tools:layout_editor_absoluteY="413dp"
-                tools:layout_editor_absoluteX="44dp" android:hint="물주기 간격" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="14sp" android:layout_marginLeft="30dp"
-                android:layout_marginStart="30dp" android:layout_marginRight="30dp" android:layout_marginEnd="30dp"
-                android:inputType="textMultiLine" android:scrollbars="vertical"
-                android:lines="5"
-                android:minLines="1"
-                android:maxLines="5"
-        />
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:ems="10"
-                android:id="@+id/온도"
-                android:hint="온도" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="14sp"
-                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
-                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
-                android:layout_marginEnd="30dp"
-                android:inputType="textMultiLine" android:scrollbars="vertical"
-                android:lines="5"
-                android:minLines="1"
-                android:maxLines="5"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:ems="10"
-                android:id="@+id/기상요건"
-                android:hint="기상요건" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="14sp"
-                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
-                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
-                android:layout_marginEnd="30dp"
-                android:inputType="textMultiLine" android:scrollbars="vertical"
-                android:lines="5"
-                android:minLines="1"
-                android:maxLines="5"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:ems="10"
-                android:id="@+id/생육상태"
-                android:hint="생육상태" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="14sp"
-                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
-                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
-                android:layout_marginEnd="30dp"
-                android:inputType="textMultiLine" android:scrollbars="vertical"
-                android:lines="5"
-                android:minLines="1"
-                android:maxLines="5"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:ems="10"
-                android:id="@+id/생육상태2"
-                android:hint="사용하고 있던 방제방법" android:textColor="@color/darkgray"
-                android:textStyle="bold" android:textSize="14sp"
-                tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
-                android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
-                android:layout_marginEnd="30dp"
-                android:inputType="textMultiLine" android:scrollbars="vertical"
-                android:lines="5"
-                android:minLines="1"
-                android:maxLines="5"/>
-        <Button
-                android:text="다음"
-                android:layout_width="80dp"
-                android:layout_height="40dp" android:id="@+id/next_step1" android:layout_gravity="center"
-                android:textStyle="bold" android:textColor="@color/white"
-                android:background="@drawable/nextbutton" app:backgroundTint="@color/main_blue"
-                android:layout_marginTop="20dp" android:layout_marginBottom="20dp"
-
-                />
         <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars"
-                    android:id="@+id/imageButton" android:layout_weight="1"/>
-            <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/gallery_image"
-                    android:id="@+id/imageButton2" android:layout_weight="1"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/plants_name"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:hint="식물명(품종)"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="156dp" />
         </LinearLayout>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="1200dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="식물의 생장환경에 대해 알려주시면 \n식물의 질병을 판단하는 데 많은 도움이 됩니다.\n자세히 작성해주시는 것이 좋지만 잘 모르신다면\n모름으로 표기해주세요."
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="1. 지역"
+            android:textColor="@color/main_blue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/location_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/location13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="소백서부내륙(청주,대전,금산)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="중부내륙(원주,이천)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영남분지(진주,합천,밀양)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="호남내륙(광주,순천,장흥)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="노령동서내륙(정읍,남원,거창,산청)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="소백서부내륙(청주,대전,금산)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="중부내륙(원주,이천)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영남내륙산간(추풍령,영주,문경)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="중북부내륙(춘천,양평)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="노령소백산간(임실)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소백산간(충주,보은)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="태백준고냉(인제,홍천,제천)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/location1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="태백고냉(대관령)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/watering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="2. 물주기"
+            android:textColor="@color/main_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/season"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="계절"
+            android:textColor="#6D8F77"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/season_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sprTofall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="봄~가을"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/winter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="겨울"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/soil_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:text="토양 수분에 따른 물주기"
+            android:textColor="#6D8F77"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/soil_water_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/soil1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="흙 대부분이 말랐을때 관수함"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/soil2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="토양 표면이 말랐을 때 충분히 관수함"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/soil3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="흙을 촉촉하게 유지하되, 흙에 잠기지 않도록 주의함"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/soil4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="항상 흙을 축축하게 유지하며, 물에 잠김"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="3. 생육상태"
+            android:textColor="@color/main_blue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/growth"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="생육상태"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:textColor="@color/darkgray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="600dp" />
+
+        <TextView
+            android:id="@+id/step1_pestcontrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="4. 방제방법"
+            android:textColor="@color/main_blue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pest_control"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="사용하고 있던 방제방법"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:textColor="@color/darkgray"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="600dp" />
+
+        <TextView
+            android:id="@+id/light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="5. 광량(실내에서 식물을 키우는 경우)"
+            android:textColor="@color/main_blue"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/light_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp">
+
+            <RadioButton
+                android:id="@+id/light1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="해당사항 없음(실외에서 키움)"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/light2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="거실 창측"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/light3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="거실 내측"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/light4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="발코니 내측"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/light5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="발코니 창측"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/light6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="실내 어두운 곳"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next_step1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/nextbutton"
+            android:text="다음"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/main_blue"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+
 
     </LinearLayout>
 </ScrollView>

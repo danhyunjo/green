@@ -18,14 +18,19 @@
                     android:layout_height="wrap_content" android:id="@+id/textView4"
                     android:textSize="24sp" android:textStyle="bold" android:textColor="@color/main_blue"
                     android:layout_gravity="center_horizontal" android:layout_marginTop="32dp"/>
+
             <Button
-                    android:text="질문에 답변이 달렸습니다.\n(비숑 프리제 / 3세)"
-                    android:gravity="left"
-                    android:layout_width="295dp"
-                    android:layout_height="60dp" android:id="@+id/button3"
-                    android:textColor="@color/main_blue" android:textStyle="bold"
-                    app:backgroundTint="#F6F4F9" android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="35dp" android:layout_marginBottom="30dp"/>
+                android:id="@+id/button3"
+                android:layout_width="295dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="left"
+                android:text="질문에 답변이 달렸습니다.\n복숭아 나무(설홍)"
+                android:textColor="@color/main_blue"
+                android:textStyle="bold"
+                app:backgroundTint="#F6F4F9" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

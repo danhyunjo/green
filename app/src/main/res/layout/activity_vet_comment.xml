@@ -39,10 +39,10 @@
                 android:inputType="textMultiLine" android:scrollbars="vertical"
                 android:lines="5"
                 android:minLines="1"
-                android:maxLines="5" android:layout_margin="30dp"
+                android:maxLines="5" android:layout_margin="10dp"
                 android:backgroundTint="#FFF6F4F9"
 
-                android:elevation="20dp"/>
+                android:elevation="2dp"/>
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -54,7 +54,7 @@
             <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp" app:srcCompat="@drawable/image_preview"
-                    android:id="@+id/imageView" android:layout_gravity="center" android:layout_margin="20dp"
+                    android:id="@+id/question_image" android:layout_gravity="center" android:layout_margin="20dp"
             />
         </LinearLayout>
         <TextView
@@ -101,7 +101,7 @@
                 android:layout_height="100dp"
                 android:ems="10"
                 android:id="@+id/기상요건"
-                android:hint="기상요건" android:textColor="@color/darkgray"
+                android:hint="일조량" android:textColor="@color/darkgray"
                 android:textStyle="bold" android:textSize="14sp"
                 tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
                 android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
@@ -130,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:ems="10"
-                android:id="@+id/생육상태2"
+                android:id="@+id/pest_control"
                 android:hint="사용하고 있던 방제방법" android:textColor="@color/darkgray"
                 android:textStyle="bold" android:textSize="14sp"
                 tools:layout_editor_absoluteY="600dp" tools:layout_editor_absoluteX="49dp"
