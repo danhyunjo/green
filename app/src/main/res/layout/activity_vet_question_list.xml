@@ -26,23 +26,35 @@
                     android:textSize="24sp"
                     android:textStyle="bold"/>
 
-            <Button
-                android:id="@+id/question"
-                android:layout_width="295dp"
-                android:layout_height="202dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="35dp"
-                android:layout_marginBottom="30dp"
-                android:gravity="left"
-                android:text="복숭아나무(설홍)\n세균성 반점병으로 추정"
-                android:textColor="@color/main_blue"
-                android:textStyle="bold"
-                app:backgroundTint="#F6F4F9" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/questionlist"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="left"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="복숭아나무(홍슬) / 중부내륙(원주,이천) \n CNN모델 분석 결과 세균성 반점병으로 추정"
+                    android:textAlignment="center"
+                    android:textColor="@color/main_blue"
+                    android:textStyle="bold"
+                    app:backgroundTint="#F6F4F9" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="30dp"
+                    app:srcCompat="@drawable/questionlist_image1" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

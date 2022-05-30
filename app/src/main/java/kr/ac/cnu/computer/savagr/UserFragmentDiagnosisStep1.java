@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -121,6 +122,8 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
         //웹페이지 호출
 //        webView.loadUrl("http://www.naver.com");
         webView.loadUrl("https://www.nongsaro.go.kr/portal/ps/psa/psab/psabf/spciesRsrchLst.ps?menuId=PS65425");
+
+        webView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
 
 
 

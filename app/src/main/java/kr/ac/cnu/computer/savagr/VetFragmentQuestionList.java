@@ -44,11 +44,6 @@ public class VetFragmentQuestionList extends Fragment {
 
         vet_question = rootView.findViewById(R.id.question);
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(vetNavi, LinearLayoutManager.HORIZONTAL, true);
-        recyclerView.setLayoutManager(linearLayoutManager);
-
-        adapter = new RecyclerAdapter();
-        recyclerView.setAdapter(adapter);
 
         vet_question.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,20 +56,5 @@ public class VetFragmentQuestionList extends Fragment {
 
     }
 
-    private void getData() {
-        List<String> questionlist_title = Arrays.asList("복숭아(설홍)", "옥수수(백금옥)", "토마토(원예9015)");
-        List<String> questionlist_content = Arrays.asList("CNN 모델 분석결과 세균성 반점병으로 추정", "CNN 모델 분석결과 세르코스포라 회색잎 점무늬병으로 추정", "CNN 모델 분석 결과 잎곰팡이병으로 추정");
-        List<Integer> questionlist_image = Arrays.asList(R.drawable.questionlist_image1, R.drawable.questionlist_image2, R.drawable.questionlist_image3);
-for(int i =0; i<questionlist_title.size(); i++){
-    Data data = new Data();
-    data.setTitle(questionlist_title.get(i));
-    data.setContent(questionlist_content.get(i));
-    data.setResId(questionlist_image.get(i));
-
-    adapter.addItem(data);
-}
-
-adapter.notifyDataSetChanged();
-    }
 
 }
