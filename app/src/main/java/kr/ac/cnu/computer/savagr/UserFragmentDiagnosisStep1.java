@@ -101,6 +101,11 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
         light6 = view.findViewById(R.id.light6);
         webView = view.findViewById(R.id.webview);
 
+        soil1 = view.findViewById(R.id.soil1);
+        soil2 = view.findViewById(R.id.soil2);
+        soil3 = view.findViewById(R.id.soil3);
+        soil4 = view.findViewById(R.id.soil4);
+
         webView.setWebViewClient(new WebViewClient());  // 새 창 띄우기 않기
         webView.setWebChromeClient(new WebChromeClient());
 
@@ -133,7 +138,7 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
             String uid = user.getUid();
         }
 
-/*
+
         season_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -170,7 +175,7 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
             }
         });
 
- */
+ /*
 
         soil_water_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -189,7 +194,7 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
                 }
             }
         });
-
+*/
 
 
         location_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -238,13 +243,15 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
 
 
 
+
+
         next_step1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference();
 
-                PlantInformation info = new PlantInformation(plants.getText().toString(),growth.getText().toString(),pest_control.getText().toString(), soil_waterResult, locationResult);
+                PlantInformation info = new PlantInformation(plants.getText().toString(),growth.getText().toString(),pest_control.getText().toString(), seasonResult, locationResult, lightResult, soil_waterResult);
                 myRef.child("plant_information").setValue(info);
 
 
