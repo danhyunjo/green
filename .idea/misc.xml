@@ -3,26 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/answer_mark.xml" value="0.1" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/camera.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/ic_account_circle.xml" value="0.1" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/ic_qna.xml" value="0.1" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/nextbutton.xml" value="0.10092592592592593" />
-        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_client_late.xml" value="0.359375" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/questionlist_iamge_setting.xml" value="0.1" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/drawable/storke.xml" value="0.2675" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_client_late.xml" value="0.22" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_login_selection.xml" value="0.359375" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_alarm.xml" value="0.32971014492753625" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_confirm.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_login.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_main.xml" value="0.322463768115942" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_mypage.xml" value="0.2609375" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_navigation.xml" value="0.32971014492753625" />
-        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_signup.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_signup.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_step1.xml" value="0.2259810554803789" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_step2.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_comment.xml" value="0.322463768115942" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_user_upload.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_comment.xml" value="0.23684210526315788" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_login.xml" value="0.359375" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_main.xml" value="0.22708333333333333" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_mypage.xml" value="0.32971014492753625" />
-        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_question_list.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_navigation.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_question_list.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_signup.xml" value="0.32971014492753625" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/activity_vet_upload.xml" value="0.2734375" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/item_recycler.xml" value="0.32971014492753625" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/questionlist_image.xml" value="0.2609375" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/step1.xml" value="0.42531120331950206" />
         <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/layout/step2.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/menu/user_menu_bottom_navigation_view.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/jdh33/IdeaProjects/savagr/app/src/main/res/menu/vet_menu_bottom_navigation_view.xml" value="0.22708333333333333" />
       </map>
     </option>
   </component>

@@ -22,7 +22,6 @@ public class VetFragmentQuestionList extends Fragment {
     Button vet_question;
     VetNavi vetNavi;
     RecyclerView recyclerView;
-    RecyclerAdapter adapter;
 
     @Override
     public void onAttach(Context context) {

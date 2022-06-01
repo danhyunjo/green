@@ -17,6 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class UserNavi extends AppCompatActivity {
     private FragmentManager fragmentManager = getSupportFragmentManager();
+    private UserFragmentConfirm user_fragmentConfirm = new UserFragmentConfirm();
     private UserFragmentDiagnosisStep1 fragmentDiagonsis = new UserFragmentDiagnosisStep1();
     private UserFragmentAlarm fragmentAlarm = new UserFragmentAlarm();
     private UserFragmentMyPage fragmentMyPage = new UserFragmentMyPage();
@@ -59,6 +60,11 @@ public class UserNavi extends AppCompatActivity {
                     break;
             }
             return true;
+        }
+    }
+    public void fragmentChange(int index){
+        if(index == 1){
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, user_fragmentConfirm).commit();
         }
     }
 

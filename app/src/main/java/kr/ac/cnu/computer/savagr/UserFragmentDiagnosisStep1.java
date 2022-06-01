@@ -3,12 +3,10 @@ package kr.ac.cnu.computer.savagr;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -34,7 +32,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UserFragmentDiagnosisStep1 extends Fragment {
     Button next_step1;
-    UserNavi userNavi;
+
     View view;
     EditText plants, pest_control, growth;
     RadioGroup season_group, location_group, soil_water_group, light_group;
@@ -48,7 +46,7 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
 
     String seasonResult, lightResult, soil_waterResult, locationResult;
 
-    String uid;
+
 
 
 
@@ -65,7 +63,7 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_user_step1, container, false);
 
-        next_step1 = view.findViewById(R.id.next_step1);
+        next_step1 = view.findViewById(R.id.next_comment);
 
         plants = view.findViewById(R.id.plants_name);
         pest_control = view.findViewById(R.id.pest_control);
@@ -134,9 +132,6 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-        if(user!=null){
-            String uid = user.getUid();
-        }
 
 
         season_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -175,7 +170,7 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
             }
         });
 
- /*
+
 
         soil_water_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -194,7 +189,7 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
                 }
             }
         });
-*/
+
 
 
         location_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -261,20 +256,16 @@ public class UserFragmentDiagnosisStep1 extends Fragment {
                 myRef.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        String value = snapshot.getValue(String.class);
-                        Log.d(TAG, "Value is : " + value);
+
                     }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
-                        Log.w(TAG, error.getMessage());
+
 
                     }
                 });
                 Intent intent = new Intent(getActivity(),UserDiagnosisStep2.class);
-                intent.addFlags((Intent.FLAG_ACTIVITY_NO_ANIMATION));
-
-
                 startActivity(intent);
             }
 

@@ -7,7 +7,7 @@
     <TextView
             android:text="STEP2. 식물의 잎 사진을 찍어주세요"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/STEP2" android:textSize="24sp"
+            android:layout_height="wrap_content" android:id="@+id/comment_title" android:textSize="24sp"
             android:textStyle="bold" android:textColor="#0B650D" android:layout_marginTop="30dp"
             android:layout_marginBottom="50dp" android:layout_gravity="center"/>
     <LinearLayout
@@ -38,13 +38,19 @@
                 android:scaleType="centerInside"
                 android:background="@color/white" android:layout_marginRight="50dp"/>
     </LinearLayout>
-    <Button
-            android:text="다음"
-            android:layout_width="80dp"
-            android:layout_height="40dp" android:id="@+id/next_step2" android:layout_gravity="center"
-            android:textStyle="bold" android:textColor="@color/white"
-            android:background="@drawable/nextbutton" app:backgroundTint="@color/main_blue"
-            android:layout_marginTop="20dp" android:layout_marginBottom="20dp"
 
-    />
+    <Button
+        android:id="@+id/user_upload_finish"
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/nextbutton"
+        android:text="업로드 완료"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@color/main_blue"
+
+        />
 </LinearLayout>

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ public class UserDiagnosisStep2 extends AppCompatActivity implements View.OnClic
     ImageButton camera_btn;
     ImageView image_preview;
     ImageButton gallery_btn;
+    Button user_upload_finish;
 
 
     Uri photoUri;
@@ -46,10 +48,12 @@ public class UserDiagnosisStep2 extends AppCompatActivity implements View.OnClic
         camera_btn = (ImageButton) findViewById(R.id.camera_btn);
         image_preview = (ImageView) findViewById(R.id.image_preview);
         gallery_btn = (ImageButton) findViewById(R.id.gallery_btn);
+        user_upload_finish = findViewById(R.id.user_upload_finish);
 
 
         camera_btn.setOnClickListener(this);
         gallery_btn.setOnClickListener(this);
+        user_upload_finish.setOnClickListener(this);
 
 
     }
@@ -89,6 +93,10 @@ public class UserDiagnosisStep2 extends AppCompatActivity implements View.OnClic
                         })
                         .start();
                 break;
+            case R.id.user_upload_finish:
+
+                Intent intent = new Intent(getApplicationContext(), UserUpload.class);
+                startActivity(intent);
 
 
         }

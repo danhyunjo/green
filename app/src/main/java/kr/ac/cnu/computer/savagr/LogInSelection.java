@@ -32,9 +32,9 @@ public class LogInSelection extends AppCompatActivity {
 
         Button user_login_button = findViewById(R.id.login_by_user);
         Button vet_login_button = findViewById(R.id.login_by_vet);
-        Button button = findViewById(R.id.question);
-        EditText text = findViewById(R.id.editTextTextPersonName);
-        TextView textView = findViewById(R.id.textView);
+
+
+
 
         user_login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,52 +52,5 @@ public class LogInSelection extends AppCompatActivity {
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Write a message to the database
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("message");
-
-                myRef.setValue(text.getText().toString());
-                text.setText("");
-
-                // Read from the database
-                myRef.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        // This method is called once with the initial value and again
-                        // whenever data at this location is updated.
-                        String value = dataSnapshot.getValue(String.class);
-                        Log.d(TAG, "Value is: " + value);
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError error) {
-                        // Failed to read value
-                        Log.w(TAG, "Failed to read value.", error.toException());
-                    }
-                });
-
-
-            }
-        });
-        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-        rootRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                List<String> list = new ArrayList<>();
-                for (DataSnapshot ds : snapshot.getChildren()) {
-                    String uid = ds.getValue().toString();
-                    list.add(uid);
-                }
-                textView.setText(list.get(0));
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Log.d(TAG, error.getMessage());
-            }
-        });
     }
 }

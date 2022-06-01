@@ -9,4 +9,9 @@
             android:id="@+id/vet_MyPage"
             android:icon="@drawable/ic_account_circle"
             android:title="마이페이지" />
+    <item
+        android:id="@+id/invisible"
+        android:visible="false"
+        android:icon="@drawable/ic_qna"
+        android:title="account" />
 </menu>

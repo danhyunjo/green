@@ -20,6 +20,7 @@ public class VetNavi extends AppCompatActivity {
     private VetFragmentQuestionList vet_fragmentDiagnosis = new VetFragmentQuestionList();
     private VetFragmentMyPage vet_fragmentMyPage = new VetFragmentMyPage();
     private VetFragmentDiagnosisComment vet_frameDiagnosisComment = new VetFragmentDiagnosisComment();
+    private VetFragmentMain vet_fragmentMain = new VetFragmentMain();
     private long backKeyPressedTime = 0;
     private Toast toast;
 
@@ -28,8 +29,9 @@ public class VetNavi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vet_navigation);
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.frameLayout, vet_fragmentDiagnosis).commitAllowingStateLoss();
+        transaction.replace(R.id.frameLayout, vet_fragmentMain).commitAllowingStateLoss();
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
+        bottomNavigationView.setSelectedItemId(R.id.invisible);
         bottomNavigationView.setOnItemSelectedListener(new ItemSelectedListener());
 
     }
@@ -40,6 +42,9 @@ public class VetNavi extends AppCompatActivity {
             FragmentTransaction transaction = fragmentManager.beginTransaction();
 
             switch (menuItem.getItemId()) {
+                case R.id.invisible:
+                    transaction.replace(R.id.frameLayout, vet_fragmentMain).commitAllowingStateLoss();
+                    break;
                 case R.id.vet_Diagnosis:
                     transaction.replace(R.id.frameLayout, vet_fragmentDiagnosis).commitAllowingStateLoss();
                     break;

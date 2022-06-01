@@ -20,14 +20,18 @@
                     android:layout_gravity="center_horizontal" android:layout_marginTop="32dp"/>
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="295dp"
-                android:layout_height="60dp"
+                android:id="@+id/user_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="35dp"
+                android:layout_marginRight="10dp"
+
                 android:layout_marginBottom="30dp"
-                android:gravity="left"
-                android:text="질문에 답변이 달렸습니다.\n복숭아 나무(설홍)"
+                android:drawableRight="@drawable/questionlist_iamge_setting"
+                android:text="질문에 답변이 달렸습니다. \n복숭아 나무(홍슬) / 중부내륙(원주,이천) "
+                android:textAlignment="center"
                 android:textColor="@color/main_blue"
                 android:textStyle="bold"
                 app:backgroundTint="#F6F4F9" />

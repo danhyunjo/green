@@ -18,13 +18,18 @@
                   android:exported="true"/>
         <activity android:name=".UserDiagnosisStep2"
                   android:exported="true"/>
-
-
+        <activity android:name=".UserConfirm"
+            android:exported="true"/>
+        <activity android:name=".VetDiagnosisComment"
+            android:exported="true"/>
         <activity android:name=".UserAlarm"
                   android:exported="true"/>
         <activity android:name=".UserLogIn"
                   android:exported="true"/>
-
+        <activity android:name=".UserUpload"
+            android:exported="true"/>
+        <activity android:name=".VetUpload"
+            android:exported="true"/>
         <activity android:name=".UserMyPage"
                   android:exported="true"/>
         <activity android:name=".UserNavi"
