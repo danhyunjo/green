@@ -41,7 +41,6 @@
                     android:drawableRight="@drawable/questionlist_iamge_setting"
                     android:paddingLeft="12dp"
                     android:paddingRight="12dp"
-                    android:text="복숭아나무(홍슬) / 중부내륙(원주,이천) \n CNN모델 분석 결과 세균성 반점병으로 추정"
                     android:textAlignment="center"
                     android:textColor="@color/main_blue"
                     android:textStyle="bold"

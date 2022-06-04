@@ -30,7 +30,7 @@
 
                 android:layout_marginBottom="30dp"
                 android:drawableRight="@drawable/questionlist_iamge_setting"
-                android:text="질문에 답변이 달렸습니다. \n복숭아 나무(홍슬) / 중부내륙(원주,이천) "
+                android:text="질문에 답변이 달렸습니다. \n"
                 android:textAlignment="center"
                 android:textColor="@color/main_blue"
                 android:textStyle="bold"

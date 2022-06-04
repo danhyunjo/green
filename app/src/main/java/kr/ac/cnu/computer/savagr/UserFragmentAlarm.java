@@ -8,15 +8,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserFragmentAlarm extends Fragment {
     Button user_alarm;
     ViewGroup view;
     UserNavi userNavi;
+    TextView alarm;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -36,6 +47,27 @@ public class UserFragmentAlarm extends Fragment {
             @Override
             public void onClick(View view) {
                 userNavi.fragmentChange(1);
+
+            }
+        });
+
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+        rootRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                List<String> list = new ArrayList<>();
+                for (DataSnapshot ds : snapshot.child("plant_information").getChildren()) {
+                    String uid = ds.getValue().toString();
+                    list.add(uid);
+                }
+                user_alarm.append(list.get(4));
+                user_alarm.append("\n");
+                user_alarm.append(list.get(2));
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });

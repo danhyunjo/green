@@ -23,13 +23,9 @@
 
 
 
-        ]]>
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+
+        ]]>
 
         <TextView
             android:id="@+id/comment_title"
@@ -50,33 +46,48 @@
 
             <ImageView
                 android:id="@+id/question_image"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:layout_margin="20dp"
-                app:srcCompat="@drawable/peach_heat" />
+                android:layout_weight="1"
+                app:srcCompat="@drawable/real_last_heat" />
 
             <ImageView
                 android:id="@+id/question_image2"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:layout_margin="20dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/peach_leaf" />
+                app:srcCompat="@drawable/real_last" />
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/plants_name2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/storke"
+            android:backgroundTint="#FFF6F4F9"
+            android:elevation="5dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:text="CNN모델 분석 결과\n 91.8008의 확률로 세균성 반점병으로 추측됩니다."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="156dp"
+            />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:text="식물명(품종)"
             android:textColor="@color/main_blue"
             android:textSize="16sp"
@@ -106,7 +117,7 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:text="지역"
             android:textColor="@color/main_blue"
             android:textSize="16sp"
@@ -142,7 +153,7 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:text="계절"
             android:textColor="@color/main_blue"
             android:textSize="16sp"
@@ -178,7 +189,7 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:text="토양 수분에 따른 물주기"
             android:textColor="@color/main_blue"
             android:textSize="16sp"
@@ -213,7 +224,7 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:text="생육상태"
             android:textColor="@color/main_blue"
             android:textSize="16sp"
@@ -248,7 +259,7 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:text="사용하고 있던 방제방법"
             android:textColor="@color/main_blue"
             android:textSize="16sp"
@@ -282,7 +293,7 @@
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
             android:text="광량(실내에서 식물을 키우는 경우)"
             android:textColor="@color/main_blue"
             android:textSize="16sp"
@@ -332,8 +343,8 @@
             android:gravity="center"
             android:hint="위의 식물의 생장환경과 CNN 모델 분석 결과를 참고하시어\n소견을 남겨주세요"
             android:inputType="textMultiLine"
-            android:lines="5"
-            android:maxLines="5"
+            android:lines="7"
+            android:maxLines="15"
             android:minLines="1"
             android:scrollbars="vertical"
             android:textAlignment="center"

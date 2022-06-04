@@ -15,6 +15,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -51,6 +58,29 @@ public class VetFragmentQuestionList extends Fragment {
             }
 
         });
+
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+        rootRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                List<String> list = new ArrayList<>();
+                for (DataSnapshot ds : snapshot.child("plant_information").getChildren()) {
+                    String uid = ds.getValue().toString();
+                    list.add(uid);
+                }
+                vet_question.append(list.get(4));
+                vet_question.append("\n");
+                vet_question.append(list.get(2));
+                vet_question.append("\n CNN모델 분석 결과 세균성 반점병으로 추정");
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
         return rootView;
 
     }
